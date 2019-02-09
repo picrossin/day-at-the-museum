@@ -14,17 +14,25 @@ enum Direction {
 
 switch(candidate_direction){
 	case Direction.North:
-		caster.image_index = caster.north_sprite_index;
+		if(caster.north_sprite_index != caster.image_index) {
+			caster.image_index = caster.north_sprite_index;
+		}
 		break;
 	case Direction.South:
-		caster.image_index = caster.south_sprite_index;
+		if(caster.south_sprite_index != caster.image_index) {
+			caster.image_index = caster.south_sprite_index;
+		}
 		break;
 	case Direction.West:
-		caster.image_index = caster.south_sprite_index;
+		if(caster.south_sprite_index != caster.image_index) {
+			caster.image_index = caster.south_sprite_index;
+		}
 		caster.image_xscale = -1;
 		break;
 	case Direction.East:
-		caster.image_index = caster.south_sprite_index;
+		if(caster.south_sprite_index != caster.image_index) {
+			caster.image_index = caster.south_sprite_index;
+		}
 		//this is the default xscale, and makes the sprite face it's normal direction
 		caster.image_xscale = 1;
 		break;

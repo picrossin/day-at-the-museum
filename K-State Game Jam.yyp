@@ -151,6 +151,22 @@
             }
         },
         {
+            "Key": "60527317-7b62-4153-b7f7-04d37b6d9f4c",
+            "Value": {
+                "id": "a977a5f3-18f3-4dc6-a77e-da975ae0836b",
+                "resourcePath": "sprites\\spr_sword\\spr_sword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6d3fe562-3948-4e96-8b69-9fd5509f6737",
+            "Value": {
+                "id": "5ae20f3b-057b-4a77-ac27-aa9904e2e68d",
+                "resourcePath": "objects\\obj_player_boomerang\\obj_player_boomerang.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "852b0607-2254-4e7c-8167-f8ab95a2092c",
             "Value": {
                 "id": "5f0eae25-a858-44ac-9e51-2d4e1eeb46d7",

@@ -12,3 +12,8 @@ propeller_speed = 2;
 
 north_sprite_index = 1;
 south_sprite_index = 0;
+
+has_my_boomerang = true;
+
+//creates equipment
+instance_create_depth(x,y,-100,obj_player_boomerang);
