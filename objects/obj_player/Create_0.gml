@@ -22,7 +22,10 @@ has_my_sword = true;
 healthbar_width = 500;
 healthbar_height = 64;
 
+window_set_cursor(cr_none);
+
 //creates equipment
-instance_create_depth(x, y, -100, obj_player_boomerang);
+instance_create_depth(x, y, -100, obj_player_boomerang_static);
 instance_create_depth(x, y, -100, obj_player_sword_static);
 instance_create_depth(x, y, -100, obj_player_sword);
+instance_create_depth(x, y, depth - 3, obj_crosshair);

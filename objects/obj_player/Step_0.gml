@@ -3,9 +3,13 @@
 handle_player_input();
 
 if(has_my_boomerang) {
-	obj_player_boomerang.x = x;
-	obj_player_boomerang.y = y;
-	change_direction(obj_player_boomerang, obj_player.current_direction);
+	obj_player_boomerang_static.image_alpha = 1.0;
+	
+	obj_player_boomerang_static.x = x;
+	obj_player_boomerang_static.y = y;
+	change_direction(obj_player_boomerang_static, obj_player.current_direction);
+} else {
+	obj_player_boomerang_static.image_alpha = 0.0;
 }
 
 if(has_my_sword) {

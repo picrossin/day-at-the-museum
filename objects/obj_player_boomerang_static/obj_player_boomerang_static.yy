@@ -2,7 +2,7 @@
     "id": "6d3fe562-3948-4e96-8b69-9fd5509f6737",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player_boomerang",
+    "name": "obj_player_boomerang_static",
     "eventList": [
         {
             "id": "343b970f-d3e7-40a4-8504-746c6d2c4f81",
