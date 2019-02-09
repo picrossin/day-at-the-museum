@@ -14,8 +14,9 @@ if(keyboard_check(vk_left)){
 	horizontal_travel_distance = 0;
 }
 
-move_with_collision(obj_player,"x", horizontal_travel_distance);
-
+if(horizontal_travel_distance != 0) {
+	move_with_collision(obj_player,obj_player.current_direction, horizontal_travel_distance);
+}
 //handles up and down steps
 //makes sure that we're not already airborne
 if(keyboard_check(vk_up)) {
@@ -31,4 +32,6 @@ if(keyboard_check(vk_up)) {
 } else {
 	vertical_travel_distance = 0;
 }
-move_with_collision(obj_player, "y", vertical_travel_distance);
+if(vertical_travel_distance != 0) {
+	move_with_collision(obj_player,obj_player.current_direction, vertical_travel_distance);
+}

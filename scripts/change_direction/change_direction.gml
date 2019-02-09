@@ -17,11 +17,13 @@ switch(candidate_direction){
 		if(caster.north_sprite_index != caster.image_index) {
 			caster.image_index = caster.north_sprite_index;
 		}
+		caster.image_xscale = -1;
 		break;
 	case Direction.South:
 		if(caster.south_sprite_index != caster.image_index) {
 			caster.image_index = caster.south_sprite_index;
 		}
+		caster.image_xscale = 1;
 		break;
 	case Direction.West:
 		if(caster.south_sprite_index != caster.image_index) {

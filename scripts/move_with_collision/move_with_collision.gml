@@ -5,18 +5,25 @@
 
 caster = argument0;
 
-cord_direction = argument1;
+travel_direction = argument1;
+if(travel_direction == Direction.North || travel_direction == Direction.South) {
+	cord_direction = "y";
+} else {
+	cord_direction = "x";
+}
+
+
 travel_distance = argument2;
 
 
-if(cord_direction = "x") {
+if(cord_direction == "x") {
 	caster_pos = caster.x;
 	caster_size = caster.sprite_width;
 }else {
 	caster_pos = caster.y;
 	caster_size = caster.sprite_height;
 }
-candidate = caster_pos + travel_distance;
+candidate = caster_pos + travel_distance;// * (travel_direction == Direction.West || travel_direction == Direction.North?-1:1);
 
 //handles wall collusion for up and down
 

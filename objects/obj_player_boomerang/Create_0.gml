@@ -4,3 +4,5 @@ current_direction = Direction.East;
 
 south_sprite_index = 0;
 north_sprite_index = 0;
+
+damage = 5;
