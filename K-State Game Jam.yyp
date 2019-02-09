@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "2927ae5c-a4c3-4efa-bb48-77c8785cd9b9",
+            "Value": {
+                "id": "95e69bca-3d51-4b41-9875-8537c15df4bd",
+                "resourcePath": "sprites\\sprite0\\sprite0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2cadb100-a2cd-49ff-940d-3850e05f1063",
             "Value": {
                 "id": "b46c2add-aa0f-4b4a-a8b0-ae2668a3726a",
@@ -84,6 +92,14 @@
                 "id": "3a4e4083-8e8e-4d8d-a852-e350abc1fef7",
                 "resourcePath": "views\\4a2d3d21-4bcd-4709-b99e-c6545d19e38c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4c6a8985-f34f-497d-b42b-feb789aafe13",
+            "Value": {
+                "id": "4581dbc7-ee25-4671-bbc3-e8c9ecc7b784",
+                "resourcePath": "objects\\obj_wall_lazy_collide\\obj_wall_lazy_collide.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -135,6 +151,22 @@
             }
         },
         {
+            "Key": "9835154d-2e26-4da9-8a5b-9ba436e5ddef",
+            "Value": {
+                "id": "1d4e519d-343f-4c06-b128-8587f70ee6c3",
+                "resourcePath": "objects\\obj_wall_collide\\obj_wall_collide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b98ff8d2-6c16-488d-be97-a85d07fadc14",
+            "Value": {
+                "id": "a29b6fa9-608d-45b7-bb80-f8b9fb42cffc",
+                "resourcePath": "sprites\\spr_wall_nocollide\\spr_wall_nocollide.yy",
+                "resourceType": "GMSprite"
+            }
+         },
+         {
             "Key": "b3a77575-d1ac-4ada-a3cb-c6c9b4822d8f",
             "Value": {
                 "id": "1c66c301-8339-4113-a437-c0b620a0bd83",
@@ -188,6 +220,14 @@
                 "id": "a8879d9a-1718-4841-a51e-1d1a724657f2",
                 "resourcePath": "views\\ec16500f-e08c-45ab-91a4-c18e7d72b11a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f6ad09f1-cbf3-4dc9-9bde-b509cc43e6fe",
+            "Value": {
+                "id": "13a2cbd1-77b8-4890-8382-3b30bba1e778",
+                "resourcePath": "sprites\\spr_wall_collide\\spr_wall_collide.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
