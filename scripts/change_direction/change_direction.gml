@@ -10,6 +10,10 @@ enum Direction {
 	South,
 	West,
 	East,
+	North_West,
+	North_East,
+	South_West,
+	South_East,
 }
 
 switch(candidate_direction){

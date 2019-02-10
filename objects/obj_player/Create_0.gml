@@ -27,6 +27,9 @@ healthbar_height = 64;
 
 healthbar_side_offset = 16;
 
+x = obj_controller.player_respawn_x;
+y = obj_controller.player_respawn_y;
+
 window_set_cursor(cr_none);
 
 //creates equipment

@@ -7,6 +7,10 @@ damage = argument1;
 
 reciever.current_health -= damage;
 
+if(reciever.current_health > reciever.MAX_HEALTH) {
+	reciever.current_health = reciever.MAX_HEALTH;
+}
+
 if (reciever.current_health <= 0) {
 	instance_destroy(reciever);	
 }

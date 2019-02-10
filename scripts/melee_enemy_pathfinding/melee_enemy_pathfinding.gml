@@ -21,12 +21,4 @@ x_attempt_step = caster.travel_step * (x_diff/abs(x_diff));
 caster.travel_direction = (x_diff > 0?Direction.East: Direction.West);
 if(x_diff != 0) {
 	move_in_box(caster, caster.travel_direction, x_attempt_step, zone);
-	switch(caster.travel_direction) {
-		case Direction.East:
-			caster.sprite_index = 3;
-			break;
-		case Direction.West:
-			caster.sprite_index = 2;
-			break;
-	}
 }

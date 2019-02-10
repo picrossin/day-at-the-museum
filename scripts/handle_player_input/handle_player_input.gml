@@ -12,8 +12,25 @@ if (mouse_check_button_pressed(mb_right)) {
 	}
 }
 
+if(obj_controller.dev_mode) {
+	kill_key = [ord("K")];
+	for(i = 0; i < array_length_1d(kill_key); ++i) {
+		if(keyboard_check(kill_key[i])) {
+			handle_damage(obj_player.id, 100*10);
+			return;
+		}
+	}
+	
+	heal_key = [ord("H")];
+	for(i = 0; i < array_length_1d(heal_key); ++i) {
+		if(keyboard_check(heal_key[i])) {
+			handle_damage(obj_player.id, -100*10);
+		}
+	}
+}
+
 //Handles game control actions
-end_key = [vk_pagedown];
+end_key = [vk_pagedown, vk_escape];
 for(i = 0; i < array_length_1d(end_key); ++i) {
 	if (keyboard_check(end_key[i])) {
 		game_end();
@@ -29,8 +46,6 @@ for(i = 0; i < array_length_1d(restart_key); ++i) {
 
 //handles movement commands
 
-obj_player.is_moving = false;
-
 left_key = [ord("A")];
 for(i = 0; i < array_length_1d(left_key); ++i) {
 	if(keyboard_check(left_key[i])){
@@ -38,7 +53,6 @@ for(i = 0; i < array_length_1d(left_key); ++i) {
 			change_direction(obj_player, Direction.West);
 		}
 		horizontal_travel_distance = obj_player.travel_step;
-		obj_player.is_moving = true;
 		move_with_collision(obj_player, obj_player.current_direction, horizontal_travel_distance);
 	} 
 }
@@ -50,8 +64,7 @@ for(i = 0; i < array_length_1d(right_key); ++i) {
 		if(obj_player.current_direction != Direction.East) {
 			change_direction(obj_player, Direction.East);
 		}
-		horizontal_travel_distance = obj_player.travel_step
-		obj_player.is_moving = true;
+		horizontal_travel_distance = obj_player.travel_step;
 		move_with_collision(obj_player, obj_player.current_direction, horizontal_travel_distance);
 	}
 }
