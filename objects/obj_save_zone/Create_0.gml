@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_alpha = 0;
 
-active = false;
+save_point_met = false;

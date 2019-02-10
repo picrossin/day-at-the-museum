@@ -25,6 +25,8 @@ hit_last_turn = false;
 healthbar_width = 500;
 healthbar_height = 64;
 
+healthbar_side_offset = 16;
+
 window_set_cursor(cr_none);
 
 //creates equipment

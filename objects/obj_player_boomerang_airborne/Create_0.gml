@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-range = 400;
+max_range = 200;
+
+travel_range = min(distance_to_point(mouse_x, mouse_y),max_range);
 
 rotation_angle = 10;
 
@@ -14,7 +16,7 @@ damage = 5;
 image_xscale = 1.5;
 image_yscale = 1.5;
 
-target_x = obj_player.x + lengthdir_x(range, angle);
-target_y = obj_player.y + lengthdir_y(range, angle);	
+target_x = obj_player.x + lengthdir_x(travel_range, angle);
+target_y = obj_player.y + lengthdir_y(travel_range, angle);	
 
 return_to_player = false;

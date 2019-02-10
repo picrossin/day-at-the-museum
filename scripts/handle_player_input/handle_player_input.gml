@@ -5,7 +5,7 @@ if (mouse_check_button_pressed(mb_left)) {
 	}
 }
 
-if (mouse_check_button(mb_right)) {
+if (mouse_check_button_pressed(mb_right)) {
 	if(obj_player.has_my_boomerang) {
 		obj_player.has_my_boomerang = false;
 		airborne_boomerang = instance_create_depth(obj_player.x, obj_player.y, obj_player.depth + 1, obj_player_boomerang_airborne);

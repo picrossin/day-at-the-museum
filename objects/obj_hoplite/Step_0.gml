@@ -6,8 +6,8 @@ if (zone.active) {
 	
 	if(has_my_sword) {
 		if(current_sword_cooldown <= 0) {
-			if(collision_circle(x, y, sprite_get_width(spr_sword)/2, obj_player, true, true)) {
-				hoplite_sword = instance_create_depth(x, y, -100, obj_hoplite_sword);
+			if(collision_circle(x, y, 50, obj_player, true, true)) {
+				hoplite_sword = instance_create_depth(x, y, depth + 1, obj_hoplite_sword);
 				hoplite_sword.owner = id;
 				has_my_sword = false;
 			}
@@ -32,6 +32,24 @@ for(i = 0; i < array_length_1d(enemy_weapons); ++i) {
 		}
 	}
 }
+
 if(!collided_with_weapon) {
 	hit_last_turn = false;
+}
+
+//Animation
+if (instance_exists(obj_player)) {
+	if (x >= obj_player.x) {
+		if (has_my_sword) {
+			sprite_step = 0;
+		} else {
+			sprite_step = 2;	
+		}
+	} else {
+		if (has_my_sword) {
+			sprite_step = 1;
+		} else {
+			sprite_step = 3;	
+		}
+	} 
 }
