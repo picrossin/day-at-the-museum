@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//dev command
+if(obj_controller.dev_mode) {
+	placed_x = x;
+	placed_y = y;
+}
+
 travel_step = 3.5;
 
 MAX_HEALTH = 100;

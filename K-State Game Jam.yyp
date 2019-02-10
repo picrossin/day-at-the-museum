@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0b914657-251b-46c9-b9cc-4b8d59dc8d19",
+            "Value": {
+                "id": "b932f179-0b44-4c19-ba24-f6cdebe23384",
+                "resourcePath": "sprites\\spr_door\\spr_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d3d2775-2b60-426f-87b8-f8b221ca2478",
             "Value": {
                 "id": "82bbd6b2-8fe8-4ee3-be94-ef10e375bbba",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "51894aa8-7bfb-4a88-96a7-fb9a38c36cbe",
+            "Value": {
+                "id": "a7ed1e01-e72a-4ff2-b95a-d86d609d08fe",
+                "resourcePath": "objects\\obj_water_tiles_revise\\obj_water_tiles_revise.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5bb2bef1-daf7-4dd6-80ec-2cf828107b60",
             "Value": {
                 "id": "696322a6-d092-47bd-9ff4-3d93176275eb",
@@ -567,14 +583,6 @@
             }
         },
         {
-            "Key": "8aab7f99-1f7f-4c59-bd20-2a561c247772",
-            "Value": {
-                "id": "c6275e1f-f3a1-45a5-a4cd-573c2c5bdce5",
-                "resourcePath": "objects\\obj_water_tiles\\obj_water_tiles.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8fac2270-f268-482e-be44-3c14d7426831",
             "Value": {
                 "id": "cda8c1f4-fd82-401d-b11a-72aca118ca68",
@@ -596,14 +604,6 @@
                 "id": "aef519dd-4632-4eea-bce7-004c899d76b0",
                 "resourcePath": "views\\92ee8c99-e3c6-4c82-967a-12cfc8db275c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "93288ec6-b1a5-4b83-9a53-42c896cf1874",
-            "Value": {
-                "id": "985044cc-b36a-49d1-ab5e-82d9b01bc799",
-                "resourcePath": "rooms\\rm_level_one_old\\rm_level_one_old.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

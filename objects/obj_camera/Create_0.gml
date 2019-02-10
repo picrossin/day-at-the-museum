@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+x = obj_controller.player_respawn_x;
+y = obj_controller.player_respawn_y;
+
 cam = view_camera[0];
 follow = obj_player;
 half_cam_width = camera_get_view_width(cam) / 2;

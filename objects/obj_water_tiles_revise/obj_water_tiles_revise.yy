@@ -1,38 +1,38 @@
 {
-    "id": "8aab7f99-1f7f-4c59-bd20-2a561c247772",
+    "id": "51894aa8-7bfb-4a88-96a7-fb9a38c36cbe",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_water_tiles",
+    "name": "obj_water_tiles_revise",
     "eventList": [
         {
-            "id": "c723b12c-950d-45ba-8e73-87d442ad3486",
+            "id": "c44d5327-0503-4174-b030-1cf24ce5ab6a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "8aab7f99-1f7f-4c59-bd20-2a561c247772"
+            "m_owner": "51894aa8-7bfb-4a88-96a7-fb9a38c36cbe"
         },
         {
-            "id": "dc2e88f0-4679-4156-91f3-3293fb51e7a6",
+            "id": "bf06d370-03b8-4f40-84d3-ba01946d9d47",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "8aab7f99-1f7f-4c59-bd20-2a561c247772"
+            "m_owner": "51894aa8-7bfb-4a88-96a7-fb9a38c36cbe"
         },
         {
-            "id": "3cb70be0-9acf-454b-a2d5-257e2640c4e6",
+            "id": "4400c9a6-3970-4780-82a5-00988abfe18b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 72,
             "eventtype": 8,
-            "m_owner": "8aab7f99-1f7f-4c59-bd20-2a561c247772"
+            "m_owner": "51894aa8-7bfb-4a88-96a7-fb9a38c36cbe"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

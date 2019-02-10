@@ -27,6 +27,14 @@ if(obj_controller.dev_mode) {
 			handle_damage(obj_player.id, -100*10);
 		}
 	}
+	
+	placed_key = [ord("P"), ord("C")];
+	for(i = 0; i < array_length_1d(placed_key); ++i) {
+		if(keyboard_check(placed_key[i])) {
+			obj_player.x = obj_player.placed_x;
+			obj_player.y = obj_player.placed_y;
+		}
+	}
 }
 
 //Handles game control actions

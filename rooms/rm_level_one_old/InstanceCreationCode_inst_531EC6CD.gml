@@ -1,1 +1,0 @@
-shoot_direction = Direction.North;
