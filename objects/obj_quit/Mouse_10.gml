@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-y -= 3;
+if (!cutscene) y -= 3;
