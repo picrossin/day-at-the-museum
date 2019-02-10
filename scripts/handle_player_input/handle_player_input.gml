@@ -1,11 +1,15 @@
 //Handles player equipment actions
 if (mouse_check_button_pressed(mb_left)) {
-	obj_player_sword.swing = true;
-	swing_sword(obj_player_sword);
+	if(obj_player.has_my_sword) {
+		sword_attack = instance_create_depth(obj_player.x, obj_player.y, -100, obj_player_sword);
+	}
 }
 
 if (mouse_check_button(mb_right)) {
-	throw_boomerang(id, mouse_x, mouse_y);
+	if(obj_player.has_my_boomerang) {
+		obj_player.has_my_boomerang = false;
+		airborne_boomerang = instance_create_depth(obj_player.x, obj_player.y, obj_player.depth + 1, obj_player_boomerang_airborne);
+	}
 }
 
 //Handles game control actions
@@ -25,7 +29,8 @@ for(i = 0; i < array_length_1d(restart_key); ++i) {
 
 //handles movement commands
 
-//left_key = [vk_left, ord("A")];
+obj_player.is_moving = false;
+
 left_key = [ord("A")];
 for(i = 0; i < array_length_1d(left_key); ++i) {
 	if(keyboard_check(left_key[i])){
@@ -33,6 +38,7 @@ for(i = 0; i < array_length_1d(left_key); ++i) {
 			change_direction(obj_player, Direction.West);
 		}
 		horizontal_travel_distance = obj_player.travel_step;
+		obj_player.is_moving = true;
 		move_with_collision(obj_player, obj_player.current_direction, horizontal_travel_distance);
 	} 
 }
@@ -45,6 +51,7 @@ for(i = 0; i < array_length_1d(right_key); ++i) {
 			change_direction(obj_player, Direction.East);
 		}
 		horizontal_travel_distance = obj_player.travel_step
+		obj_player.is_moving = true;
 		move_with_collision(obj_player, obj_player.current_direction, horizontal_travel_distance);
 	}
 }

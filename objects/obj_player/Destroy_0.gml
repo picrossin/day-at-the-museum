@@ -3,7 +3,7 @@
 
 instance_destroy();
 
-instance_destroy(obj_player_boomerang);
+instance_destroy(obj_player_boomerang_static);
 instance_destroy(obj_player_sword);
 instance_destroy(obj_player_sword_static);
 

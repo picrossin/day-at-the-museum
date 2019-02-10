@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (instance_exists(obj_player)) {
-    x = obj_player.x;
-    y = obj_player.y - 11;
+if (instance_exists(owner)) {
+    x = owner.x;
+    y = owner.y - 11;
+} else {
+	instance_destroy();
 }
 
 
@@ -14,8 +16,9 @@ if (image_speed > 0) {
         image_speed = 0;
     }
 } else {
-	if(instance_exists(obj_player)) {
-		obj_player.has_my_sword = true;
+	if(instance_exists(owner)) {
+		owner.has_my_sword = true;
+		owner.current_sword_cooldown = owner.SWORD_COOLDOWN;
 		instance_destroy();
 	}
 }

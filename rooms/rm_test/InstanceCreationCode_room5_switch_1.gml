@@ -1,1 +1,0 @@
-zones = [room5_monster_zone_1];

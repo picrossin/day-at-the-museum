@@ -18,3 +18,18 @@ if(has_my_sword) {
 	change_direction(obj_player_sword_static, obj_player.current_direction);
 }
 
+enemy_weapons = [obj_hoplite_sword];
+collided_with_weapon = false;
+for(i = 0; i < array_length_1d(enemy_weapons); ++i) {
+	if(place_meeting(x, y, enemy_weapons[i])) {
+		collided_with_weapon = true;
+		if(!hit_last_turn) {
+			hit_last_turn = true;
+			show_debug_message(string(id)+" was hit");
+			handle_damage(id, enemy_weapons[i].damage);
+		}
+	}
+}
+if(!collided_with_weapon) {
+	hit_last_turn = false;
+}

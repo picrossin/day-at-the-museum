@@ -1,38 +1,28 @@
 {
-    "id": "ad948b05-f60a-4899-a9f7-08f55f79aacb",
+    "id": "20d18a01-04ff-4b1c-b472-e559e68ec0f9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_hoplite",
+    "name": "obj_hoplite_sword",
     "eventList": [
         {
-            "id": "e71ef0e7-b085-4005-b53d-1f936f76adc2",
+            "id": "9a5b13df-76dc-4cf8-8be5-b891c679a5e6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "ad948b05-f60a-4899-a9f7-08f55f79aacb"
+            "m_owner": "20d18a01-04ff-4b1c-b472-e559e68ec0f9"
         },
         {
-            "id": "c23e858d-f270-447a-9662-0c3706eb299d",
+            "id": "2a0d6dd8-29ec-46e9-8a92-b221f2dd3737",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "ad948b05-f60a-4899-a9f7-08f55f79aacb"
-        },
-        {
-            "id": "95ca46df-388f-4698-9828-ee49053bcceb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "ad948b05-f60a-4899-a9f7-08f55f79aacb"
+            "m_owner": "20d18a01-04ff-4b1c-b472-e559e68ec0f9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d6c992a4-ef28-4df6-b505-e36442678040",
+    "spriteId": "60527317-7b62-4153-b7f7-04d37b6d9f4c",
     "visible": true
 }
