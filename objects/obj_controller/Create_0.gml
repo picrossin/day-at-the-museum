@@ -5,7 +5,7 @@ start_pos = [640, 1600];
 
 checkpoint_pos = [1088, 384 + 64 * 2];
 
-custom_pos = pointer_null; //[1096, 490];
+custom_pos = [860, 455]; //[1096, 490];
 
 dev_mode = true;
 
