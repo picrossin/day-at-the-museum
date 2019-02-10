@@ -1,0 +1,1 @@
+zones = [room2_monster_zone_2, room2_monster_zone_3];

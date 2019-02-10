@@ -4,3 +4,5 @@
 travel_step = 3;
 
 sprite_step = 0;
+
+zone = instance_place(x, y, obj_monster_zone);

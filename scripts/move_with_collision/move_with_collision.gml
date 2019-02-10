@@ -23,11 +23,10 @@ if(cord_direction == "x") {
 	caster_pos = caster.y;
 	caster_size = caster.sprite_height;
 }
-candidate = caster_pos + travel_distance;// * (travel_direction == Direction.West || travel_direction == Direction.North?-1:1);
+candidate = caster_pos + travel_distance;
 
-collision_objects = [obj_wall_collide, obj_hoplite, obj_player];
+collision_objects = [obj_wall_collide];
 
-//handles wall collusion for up and down
 for(i = 0; i < array_length_1d(collision_objects); ++i) {
 	if(place_meeting(cord_direction=="x"?candidate:caster.x, cord_direction=="y"?candidate:caster.y, collision_objects[i])) {
 		conflicting_wall = instance_position(caster.x + (cord_direction=="x"?travel_distance:0), caster.y + (cord_direction=="y"?travel_distance:0), collision_objects[i]);
