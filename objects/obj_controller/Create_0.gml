@@ -5,7 +5,7 @@ start_pos = [656, 1600];
 
 checkpoint_pos = [1088, 384 + 64 * 2];
 
-custom_pos = [840, 490];
+custom_pos = [1096, 490];
 
 dev_mode = true;
 

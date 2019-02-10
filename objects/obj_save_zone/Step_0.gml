@@ -15,5 +15,6 @@ if(!save_point_met) {
 		obj_controller.player_respawn_x = obj_controller.checkpoint_pos[0];
 		obj_controller.player_respawn_y = obj_controller.checkpoint_pos[1];
 		save_point_met = true;
+		handle_damage(obj_player, -1000);
 	}
 }

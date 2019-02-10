@@ -6,6 +6,7 @@
 image_speed = 1;
 
 damage = 15;
+has_damaged_player = false;
 
 x_offset = 17;
 

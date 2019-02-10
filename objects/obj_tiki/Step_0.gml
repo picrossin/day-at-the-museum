@@ -3,7 +3,30 @@
 
 if (zone.active) {
 	melee_boss_pathfinding(id, obj_player, zone);
-	
+	if(place_meeting(x, y, obj_player)) {
+		bounce_direction = obj_player.current_direction;
+		switch (bounce_direction) {
+			case Direction.North:
+				bounce_direction = Direction.South;
+				break;
+			case Direction.South:
+				bounce_direction = Direction.North;
+				break;
+			case Direction.East:
+				bounce_direction = Direction.West;
+				break;
+			case Direction.West:
+				bounce_direction = Direction.East;
+				break;
+		}
+		move_with_collision(obj_player, bounce_direction, 5);
+		if(current_bounce_cooldown <= 0) {		
+			handle_damage(obj_player, damage);
+			current_bounce_cooldown = BOUNCE_COOLDOWN;
+		} else {
+			--current_bounce_cooldown;	
+		}
+	}
 	if(current_diamond_cooldown <= 0) {
 		
 		top_left_fire = instance_create_layer(x, y, "Projectiles", obj_tiki_fireball);
@@ -25,6 +48,27 @@ if (zone.active) {
 		current_diamond_cooldown = DIAMOND_COOLDOWN;
 	} else {
 		-- current_diamond_cooldown;
+	}
+	if(current_circle_cooldown <= 0) {
+		
+		full_circle_radians = 2* pi;
+		
+		balls = 8;
+		
+		for(n = 0; n < balls; ++n) {
+			current_fireball = instance_create_layer(x + sprite_width/2, y + sprite_height/2, "Projectiles", obj_tiki_fireball);
+			
+			angle = full_circle_radians*(n / balls);
+			//x2 = x + sin(angle)*sprite_width;
+			//y2 = y - sprite_width*(1 - cos(angle));
+			
+			current_fireball.hspeed = fireball_step*cos(angle) * (angle<=90 || angle>=270?1:-1);
+			current_fireball.vspeed = fireball_step*sin(angle) * (angle>=90 || angle<=270?-1:1);
+		}
+		
+		current_circle_cooldown = CIRCLE_COOLDOWN;
+	} else {
+		--current_circle_cooldown;
 	}
 }
 

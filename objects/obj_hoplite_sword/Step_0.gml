@@ -25,8 +25,6 @@ if (image_speed > 0) {
     }
 } else {
 	if(instance_exists(owner)) {
-		owner.has_my_sword = true;
-		owner.current_sword_cooldown = owner.SWORD_COOLDOWN;
 		instance_destroy();
 	}
 }

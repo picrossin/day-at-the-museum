@@ -3,7 +3,7 @@
 
 travel_step = 3;
 
-damage = 15;
+damage = 7;
 
 old_x = x;
 old_y = y;

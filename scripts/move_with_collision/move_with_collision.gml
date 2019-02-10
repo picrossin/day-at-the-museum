@@ -25,7 +25,7 @@ if(cord_direction == "x") {
 }
 candidate = caster_pos + travel_distance;
 
-collision_objects = [obj_wall_collide];
+collision_objects = [obj_wall_collide, obj_door];
 
 for(i = 0; i < array_length_1d(collision_objects); ++i) {
 	if(place_meeting(cord_direction=="x"?candidate:caster.x, cord_direction=="y"?candidate:caster.y, collision_objects[i])) {
